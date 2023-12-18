@@ -1,0 +1,280 @@
+
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        background: url("/images/bg.jpg");
+        background-size: 100vh;
+        background-size: 100vw;
+        background-repeat: no-repeat;
+
+    }
+
+    .nav-list {
+        list-style-type: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 60px;
+        margin-bottom: 10px;
+    }
+
+    .nav-link {
+        color: #000000;
+        text-decoration: none;
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+
+    .nav-list :hover {
+        color: #da7be0c6;
+        transition: .5s ease;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 24px;
+    }
+
+    .ham-menu {
+        display: none;
+        cursor: pointer;
+    }
+
+    .menu-btn i {
+        color: #000000;
+        font-size: 1.5rem;
+        display: none;
+        cursor: pointer;
+    }
+
+    #Mbtn {
+        display: none;
+    }
+
+    .logo {
+        width: 20%;
+        height: 20%;
+        display: flex;
+        align-items: center;
+        margin: 1% 0;
+    }
+
+    .logo img {
+        width: 100%;
+        height: 100%;
+    }
+
+    
+    #slogan {
+        font-size: 4vw;
+        text-align: center;
+        margin-top: 5%;
+    }
+
+    
+    .searchbar {
+        width: 45%;
+        max-width: 90%;
+        background: rgba(127, 20, 129, 0.2);
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 2%;
+        margin-left: 28%;
+        border-radius: 60px;
+        /* padding: 10px 20px; */
+        backdrop-filter: blur(4px);
+    }
+
+    .searchbar input {
+        background: transparent;
+        flex: 1;
+        border: 0;
+        outline: none;
+        padding: 24px 20px;
+        font-size: medium;
+        color: black;
+        font-weight: bolder;
+    }
+
+    ::placeholder {
+        color: black;
+    }
+
+    .searchbar button {
+        border: 0;
+        border-radius: 50%;
+        margin-right: 10px;
+        background: none;
+        cursor: pointer;
+    }
+
+    .searchbar button img {
+        width: 40px;
+        height: 40px;
+        padding: 5px 5px 5px 5px;
+    }
+
+    .searchbar:active {
+        box-shadow: 5px 5px 20px #cb26f57c inset;
+    }
+
+    .Sbtn :hover {
+        background-color: #da7be0c6;
+        transition: .5s ease;
+        border-radius: 30px;
+        width: 45px;
+        height: 45px;
+    }
+    .loginbtn{
+        border: none;
+        background-color: transparent;
+        font-weight: 500;
+        font-size: 1.5rem;
+    }
+    
+    @media(max-width:768px) {
+
+        
+        .nav-list {
+            position: fixed;
+            left: -110%;
+            top: 0%;
+            gap: 0;
+            height: 100vh;
+            width: 100vw;
+            flex-direction: column;
+            background-color: rgba(137, 136, 136, 0.3);
+            backdrop-filter: blur(10px);
+            text-align: center;
+            display: inline-block;
+            transition: .2s ease;
+            z-index: 1;
+        }
+
+        .navbar ul li {
+            margin: 5vh 0;
+            display: flex;
+            justify-content: center;
+            padding-top: 1.5vh;
+        }
+
+        .nav-link {
+            font-size: 1rem;
+            font-weight: 500;
+            display: inline-block;
+        }
+        .loginbtn{
+            font-size: 1rem;
+        }
+
+        .menu-btn i {
+            display: block;
+            position: relative;
+            z-index: 2;
+        }
+
+        #Mbtn:checked~ul {
+            left: 0%;
+        }
+
+        #Mbtn {
+            display: none;
+        }
+
+        #Mbtn:checked~.menu-btn i:before {
+            content: "\f00d";
+        }
+
+        
+        .searchbar {
+            width: 65%;
+            min-width: 65%;
+            background: rgba(127, 20, 129, 0.2);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 2%;
+            margin-left: 17%;
+            border-radius: 60px;
+        }
+
+        .searchbar input {
+            background: transparent;
+            flex: 1;
+            border: 0;
+            outline: none;
+            padding: 0.5rem 1rem;
+            font-size: small;
+            color: black;
+            font-weight: bolder;
+
+        }
+
+        .searchbar:active {
+            box-shadow: 5px 5px 20px #cb26f57c inset;
+        }
+
+        .searchbar button img {
+            width: 24px;
+            height: 24px;
+        }
+    #news{
+        margin-top: -20%;
+    }
+    #fcolomn{
+        margin-top: -9vh;
+            
+        margin-left: -10vw;
+    }
+}
+
+    .sub-title {
+        margin-top: 26%;
+    }
+    .card {
+        border: none;
+        border-radius: 10px;
+        /* transition-property: background-color;
+        transition-duration: 1s;
+        transition-timing-function: ease-out; */
+        transition: background-color 1s ease-out ;
+        /* box-shadow: 0.7px 0.7px 13px black; */
+        box-shadow: 2px 8px 17px 2px rgba(0, 0, 0, 0.33)
+    }
+    .card:hover{
+        background-color: #ffdcb6d2;
+        /* height: height+10; */
+    }
+    .col {
+        margin-top: 2%;
+        gap: 3vh;
+        align-self: center;
+    }
+    #footer{
+        margin-top: 5%;
+        background-color: #212529;
+        color: white;
+    }
+    #sections{
+        margin-left: 20%;
+        margin-right: 3%;
+    }
+    #flogo{
+        margin-left: 2%;
+        width: 300px;
+        height: 200px;
+    }
+    #flist{
+        color: white;
+    }
+    #lg{
+        color: white;
+        margin-right: 10px;
+    }
