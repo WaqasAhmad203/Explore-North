@@ -24,7 +24,7 @@ Welcome to Explore North, where your journey begins! This is the home page of ou
 To get started with Wanderlust Explorer, follow these steps:
 
 1. Clone the repository: `git clone https://github.com/WaqasAhmad203/Explore-North.git`
-2. Open `index.html` in your web browser.
+2. Open `home.html` in your web browser.
 
 ## Usage
 
